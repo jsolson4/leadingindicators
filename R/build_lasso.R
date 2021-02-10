@@ -6,7 +6,7 @@ build_lasso <- function(y, x, h=12, lambda=1, seed=1010, nfolds=10, type.measure
     }
   }
   # Test on length y & x
-  if (length(data.frame(y.in)[,1]) == length(data.frame(x)[,1])){
+  if (length(data.frame(y)[,1]) == length(data.frame(x)[,1])){
     print("The target variable y is of equal length as the train+forecast set x. x should also contain values to forecast.")
     return(NA)
   } else {
